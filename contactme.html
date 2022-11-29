@@ -1,0 +1,113 @@
+<!-- Simardeep Singh
+This page is created for customers, so that they can contact me with their query related to products or anything. -->
+<html>
+<head>
+  <title>My coffee Site-Contact</title>
+    <link rel="stylesheet" href="style1.css" type="text/css" />
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="header-inner">
+        <div id="headerright">
+          <div class="headertextbig">Simardeep Singh</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="main-inner">
+        <div id="navigationleft">
+          <h4 title="Navigation">Navigation</h4>
+            <ul class="menu">
+              <li><a href="index.html">&raquo; Home</a></li>
+              <li><a href="about-us.html">&raquo; About Coffee</a></li>
+              <li><a href="menu.html">&raquo; Menu</a></li>
+              <li><a href="resume.html">&raquo; Resume </a></li>
+              <li><a href="#">&raquo; Contact Me</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+  
+<form name ="form1" action="#">
+<table align="center" cellspacing="5px" cellpadding="5px" BORDER="1" width="90%">
+<tr>
+<th colspan ="2" align="center" ><H1>Contact Me</H1></th>
+</tr>
+<tr>
+<th>ENTER YOUR EMAIL ID</TH>
+<Th> <input type ="email" name="email"> </th>
+</tr>
+<tr>
+<th> ENTER YOUR CONTACT </TH>
+<TH> <input type ="phone" name="phone"> </th>
+</tr>
+<tr>
+<th> GENDER </TH>
+<TH> 
+<input type ="radio" name ="r1">&nbsp;Male&nbsp;&nbsp;
+<input type ="radio" name ="r1">&nbsp;Female
+</th>
+</tr>
+<tr>
+<th> COUNTRY </th>
+<th><select>
+  <option> Australia </option>
+  <option> CANADA </option>
+  <option> U.S.A. </option>
+  <option> U.K.</option>
+  <option> NEW ZEALAND </option>
+  
+</select>
+</th>
+</tr>
+<tr>
+<th>Enter Your Home Page Address</th>
+<th><input type ="text" name="home">
+</th>
+</tr>
+
+<tr>
+<th>Give Your Feedback </th>
+<th> <textarea rows="5" cols ="25"> </textarea>
+</th>
+</tr>
+<tr>
+<th align = "center"> <input type ="submit" value ="Submit" onclick="ValidateEmail(document.form1.email)" name='submit'></th>
+<th align = "center"> <input type ="reset" value ="Reset" name='reset'></th>
+</tr>
+</table>
+</form>
+<hr noshade size="1">
+      
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      � Simardeep singh,India. All Rights Reserved
+      <div id="footer-social">
+      <a href="https://www.facebook.com/"><img src="images/social/facebook.png" width="32px" height="32px"></a>
+      <a href="https://www.instagram.com/"><img src="images/social/instagram.png" width="32px" height="32px"></a>
+      <a href="https://www.youtube.com/"><img src="images/social/youtube.png" width="32px" height="32px"></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      
+      function ValidateEmail(input) {
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  if (input.value.match(validRegex)) {
+    alert("Valid email address!");
+    document.form1.text1.focus();
+    return true;
+  } else {
+    alert("Invalid email address!");
+    document.form1.text1.focus();
+    return false;
+  }
+}
+    </script>
+</body>
+</html>
